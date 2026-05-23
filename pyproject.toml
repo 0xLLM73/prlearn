@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=68"]
+requires = ["setuptools>=82.0.1"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -9,10 +9,10 @@ description = "Local-first CLI that turns GitHub PR feedback into personal codin
 readme = "README.md"
 requires-python = ">=3.11"
 authors = [{ name = "prlearn" }]
-dependencies = ["cryptography>=42"]
+dependencies = ["cryptography>=48.0.0"]
 
 [project.optional-dependencies]
-test = ["pytest>=8"]
+test = ["pytest>=9.0.3"]
 
 [project.scripts]
 prlearn = "prlearn.cli:main"

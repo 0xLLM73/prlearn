@@ -10,6 +10,17 @@ For a full first-run guide, see [docs/local-setup.md](docs/local-setup.md). For
 maintainer publication checks, see
 [docs/public-release.md](docs/public-release.md) and [SECURITY.md](SECURITY.md).
 
+Install from GitHub for now:
+
+```bash
+python3 -m venv .venv
+. .venv/bin/activate
+python -m pip install "prlearn @ git+https://github.com/0xLLM73/prlearn.git@v0.1.0"
+```
+
+`prlearn` is not published to PyPI yet. Until there is a signed release workflow
+with trusted publishing, GitHub tags are the supported public distribution path.
+
 ```bash
 python3 -m venv .venv
 . .venv/bin/activate

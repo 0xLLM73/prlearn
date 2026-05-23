@@ -43,6 +43,11 @@ optional OpenAI API key, optional Codex login, optional Ollama models, and local
 encryption passphrase. Maintainer credentials must never be reused by public
 users.
 
+To rotate a Telegram bot token, open Telegram, message `@BotFather`, send
+`/revoke`, choose the affected bot, and store only the new token in your private
+local environment or secret manager. Do not paste the replacement token into
+chat, issues, pull requests, commits, or CI logs.
+
 ## Public Release Gate
 
 Before making a repository public, run:
