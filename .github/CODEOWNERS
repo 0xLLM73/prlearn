@@ -1,0 +1,3 @@
+# Require maintainer review for every public contribution once branch
+# protection or a repository ruleset enables CODEOWNERS review.
+* @0xLLM73

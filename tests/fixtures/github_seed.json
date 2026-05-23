@@ -1,0 +1,176 @@
+{
+  "repos": [
+    {
+      "full_name": "octo/app",
+      "owner": {"login": "octo"},
+      "name": "app",
+      "default_branch": "main",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "language": "TypeScript",
+      "size": 420,
+      "open_issues_count": 4,
+      "pushed_at": "2026-05-20T10:00:00Z",
+      "updated_at": "2026-05-20T11:00:00Z"
+    },
+    {
+      "full_name": "octo/payments",
+      "owner": {"login": "octo"},
+      "name": "payments",
+      "default_branch": "main",
+      "private": true,
+      "fork": false,
+      "archived": false,
+      "language": "Python",
+      "size": 880,
+      "open_issues_count": 8,
+      "pushed_at": "2026-05-19T08:00:00Z",
+      "updated_at": "2026-05-19T08:30:00Z"
+    },
+    {
+      "full_name": "octo/old-tool",
+      "owner": {"login": "octo"},
+      "name": "old-tool",
+      "default_branch": "main",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "language": "Go",
+      "size": 80,
+      "open_issues_count": 1,
+      "pushed_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "full_name": "octo/archived",
+      "owner": {"login": "octo"},
+      "name": "archived",
+      "default_branch": "main",
+      "private": false,
+      "fork": false,
+      "archived": true,
+      "language": "JavaScript",
+      "size": 50,
+      "open_issues_count": 0,
+      "pushed_at": "2026-05-18T00:00:00Z",
+      "updated_at": "2026-05-18T00:00:00Z"
+    },
+    {
+      "full_name": "octo/forked",
+      "owner": {"login": "octo"},
+      "name": "forked",
+      "default_branch": "main",
+      "private": false,
+      "fork": true,
+      "archived": false,
+      "language": "Ruby",
+      "size": 60,
+      "open_issues_count": 0,
+      "pushed_at": "2026-05-18T00:00:00Z",
+      "updated_at": "2026-05-18T00:00:00Z"
+    }
+  ],
+  "prs": [
+    {
+      "repo_full_name": "octo/app",
+      "number": 12,
+      "github_id": "PR_seed_12",
+      "title": "Render project dashboard",
+      "url": "https://github.com/octo/app/pull/12",
+      "author_login": "coder",
+      "state": "MERGED",
+      "is_merged": true,
+      "created_at": "2026-05-20T10:00:00Z",
+      "updated_at": "2026-05-20T12:00:00Z",
+      "merged_at": "2026-05-20T12:30:00Z",
+      "head_sha": "seed111",
+      "base_ref": "main",
+      "head_ref": "dashboard",
+      "reviews": [
+        {
+          "id": "seed-review-12",
+          "author": {"login": "reviewer"},
+          "state": "CHANGES_REQUESTED",
+          "body": "Please add a regression test for the empty state before this ships.",
+          "url": "https://github.com/octo/app/pull/12#pullrequestreview-12",
+          "created_at": "2026-05-20T11:00:00Z"
+        }
+      ],
+      "review_comments": [],
+      "issue_comments": [],
+      "files": [
+        {"path": "src/Dashboard.tsx", "status": "modified", "additions": 24, "deletions": 4, "changes": 28}
+      ],
+      "commits": [],
+      "check_runs": []
+    },
+    {
+      "repo_full_name": "octo/payments",
+      "number": 7,
+      "github_id": "PR_seed_7",
+      "title": "Harden webhook delivery",
+      "url": "https://github.com/octo/payments/pull/7",
+      "author_login": "coder",
+      "state": "MERGED",
+      "is_merged": true,
+      "created_at": "2026-05-19T08:00:00Z",
+      "updated_at": "2026-05-19T09:00:00Z",
+      "merged_at": "2026-05-19T09:30:00Z",
+      "head_sha": "seed222",
+      "base_ref": "main",
+      "head_ref": "webhook",
+      "reviews": [
+        {
+          "id": "seed-review-7",
+          "author": {"login": "security"},
+          "state": "CHANGES_REQUESTED",
+          "body": "Security issue: the webhook needs signature verification and idempotency before trusting the payload.",
+          "url": "https://github.com/octo/payments/pull/7#pullrequestreview-7",
+          "created_at": "2026-05-19T08:40:00Z"
+        }
+      ],
+      "review_comments": [],
+      "issue_comments": [],
+      "files": [
+        {"path": "api/webhook.py", "status": "modified", "additions": 40, "deletions": 6, "changes": 46}
+      ],
+      "commits": [],
+      "check_runs": []
+    }
+  ],
+  "commits": [
+    {
+      "repo_full_name": "octo/app",
+      "sha": "commit-fix-empty",
+      "message": "fix regression in dashboard empty state",
+      "author_login": "coder",
+      "committed_at": "2026-05-21T10:00:00Z",
+      "url": "https://github.com/octo/app/commit/commit-fix-empty"
+    },
+    {
+      "repo_full_name": "octo/app",
+      "sha": "commit-revert-types",
+      "message": "revert dashboard type refactor",
+      "author_login": "coder",
+      "committed_at": "2026-05-21T11:00:00Z",
+      "url": "https://github.com/octo/app/commit/commit-revert-types"
+    },
+    {
+      "repo_full_name": "octo/app",
+      "sha": "commit-copy",
+      "message": "chore update button copy",
+      "author_login": "coder",
+      "committed_at": "2026-05-21T12:00:00Z",
+      "url": "https://github.com/octo/app/commit/commit-copy"
+    },
+    {
+      "repo_full_name": "octo/payments",
+      "sha": "commit-auth-guard",
+      "message": "fix webhook auth guard and idempotency handling",
+      "author_login": "coder",
+      "committed_at": "2026-05-20T10:00:00Z",
+      "url": "https://github.com/octo/payments/commit/commit-auth-guard"
+    }
+  ]
+}

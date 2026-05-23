@@ -1,0 +1,37 @@
+{
+  "prs": [
+    {
+      "repo_full_name": "octo/app",
+      "number": 5,
+      "github_id": "PR_5",
+      "title": "Add notifications panel",
+      "url": "https://github.com/octo/app/pull/5",
+      "author_login": "coder",
+      "state": "MERGED",
+      "is_merged": true,
+      "created_at": "2026-05-14T10:00:00Z",
+      "updated_at": "2026-05-15T12:00:00Z",
+      "merged_at": "2026-05-15T12:30:00Z",
+      "head_sha": "abc555",
+      "base_ref": "main",
+      "head_ref": "notifications",
+      "reviews": [
+        {
+          "id": "review-5",
+          "author": {"login": "reviewer"},
+          "state": "CHANGES_REQUESTED",
+          "body": "Please handle the empty state and add tests for null notification data.",
+          "url": "https://github.com/octo/app/pull/5#pullrequestreview-5",
+          "created_at": "2026-05-15T11:00:00Z"
+        }
+      ],
+      "review_comments": [],
+      "issue_comments": [],
+      "files": [
+        {"path": "src/Notifications.tsx", "status": "added", "additions": 65, "deletions": 0, "changes": 65}
+      ],
+      "commits": [],
+      "check_runs": []
+    }
+  ]
+}

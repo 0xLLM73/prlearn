@@ -1,0 +1,178 @@
+{
+  "prs": [
+    {
+      "repo_full_name": "octo/app",
+      "number": 1,
+      "github_id": "PR_1",
+      "title": "Render profile settings",
+      "url": "https://github.com/octo/app/pull/1",
+      "author_login": "coder",
+      "state": "MERGED",
+      "is_merged": true,
+      "created_at": "2026-05-01T10:00:00Z",
+      "updated_at": "2026-05-02T12:00:00Z",
+      "merged_at": "2026-05-02T12:30:00Z",
+      "head_sha": "abc111",
+      "base_ref": "main",
+      "head_ref": "profile-settings",
+      "reviews": [
+        {
+          "id": "review-1",
+          "author": {"login": "reviewer"},
+          "state": "CHANGES_REQUESTED",
+          "body": "Please add a regression test for the null UI state. This will throw when profile is undefined.",
+          "url": "https://github.com/octo/app/pull/1#pullrequestreview-1",
+          "created_at": "2026-05-02T11:00:00Z"
+        }
+      ],
+      "review_comments": [
+        {
+          "id": "comment-1",
+          "author": {"login": "reviewer"},
+          "body": "Missing test for the empty state here.",
+          "path": "src/Profile.tsx",
+          "line": 42,
+          "url": "https://github.com/octo/app/pull/1#discussion_r1",
+          "created_at": "2026-05-02T11:05:00Z"
+        }
+      ],
+      "issue_comments": [],
+      "files": [
+        {"path": "src/Profile.tsx", "status": "modified", "additions": 44, "deletions": 8, "changes": 52}
+      ],
+      "commits": [
+        {"id": "commit-1", "message": "Add profile settings", "oid": "abc111"}
+      ],
+      "check_runs": []
+    },
+    {
+      "repo_full_name": "octo/payments",
+      "number": 2,
+      "github_id": "PR_2",
+      "title": "Add Stripe webhook handler",
+      "url": "https://github.com/octo/payments/pull/2",
+      "author_login": "coder",
+      "state": "MERGED",
+      "is_merged": true,
+      "created_at": "2026-05-03T10:00:00Z",
+      "updated_at": "2026-05-04T12:00:00Z",
+      "merged_at": "2026-05-04T12:30:00Z",
+      "head_sha": "abc222",
+      "base_ref": "main",
+      "head_ref": "webhook",
+      "reviews": [
+        {
+          "id": "review-2",
+          "author": {"login": "security"},
+          "state": "CHANGES_REQUESTED",
+          "body": "Security issue: the webhook needs signature verification and idempotency before trusting the payload.",
+          "url": "https://github.com/octo/payments/pull/2#pullrequestreview-2",
+          "created_at": "2026-05-04T11:00:00Z"
+        }
+      ],
+      "review_comments": [],
+      "issue_comments": [],
+      "files": [
+        {"path": "api/webhook.ts", "status": "added", "additions": 80, "deletions": 0, "changes": 80}
+      ],
+      "commits": [],
+      "check_runs": []
+    },
+    {
+      "repo_full_name": "octo/app",
+      "number": 3,
+      "github_id": "PR_3",
+      "title": "Refactor dashboard types",
+      "body": "## Summary\nRefactor dashboard types.\n\n## Validation\n- typecheck currently fails in CI and needs follow-up.",
+      "url": "https://github.com/octo/app/pull/3",
+      "author_login": "coder",
+      "state": "OPEN",
+      "is_merged": false,
+      "created_at": "2026-05-05T10:00:00Z",
+      "updated_at": "2026-05-05T12:00:00Z",
+      "head_sha": "abc333",
+      "base_ref": "main",
+      "head_ref": "types",
+      "labels": [{"name": "typescript"}],
+      "review_decision": "REVIEW_REQUIRED",
+      "mergeable": "UNKNOWN",
+      "reviews": [],
+      "review_comments": [],
+      "issue_comments": [],
+      "timeline": [
+        {
+          "id": "timeline-3-ready",
+          "event": "ready_for_review",
+          "actor": {"login": "coder"},
+          "created_at": "2026-05-05T10:30:00Z"
+        }
+      ],
+      "files": [
+        {"path": "src/dashboard.ts", "status": "modified", "additions": 20, "deletions": 12, "changes": 32, "patch": "@@ -1 +1 @@\n-const value: string = data.value\n+const value = data.value"}
+      ],
+      "commits": [],
+      "check_runs": [
+        {
+          "id": "check-3",
+          "name": "typecheck",
+          "status": "completed",
+          "conclusion": "failure",
+          "details": "Typecheck failed: src/dashboard.ts can break because value may be undefined.",
+          "url": "https://github.com/octo/app/actions/runs/3",
+          "started_at": "2026-05-05T11:00:00Z",
+          "completed_at": "2026-05-05T11:05:00Z",
+          "output": {
+            "title": "TypeScript errors",
+            "summary": "src/dashboard.ts: value may be undefined"
+          },
+          "annotations": [
+            {
+              "id": "annotation-3",
+              "annotation_level": "failure",
+              "path": "src/dashboard.ts",
+              "start_line": 8,
+              "end_line": 8,
+              "title": "Type error",
+              "message": "value may be undefined; typecheck failed",
+              "html_url": "https://github.com/octo/app/actions/runs/3#annotation-3",
+              "created_at": "2026-05-05T11:04:00Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "repo_full_name": "octo/app",
+      "number": 4,
+      "github_id": "PR_4",
+      "title": "Polish copy",
+      "url": "https://github.com/octo/app/pull/4",
+      "author_login": "coder",
+      "state": "MERGED",
+      "is_merged": true,
+      "created_at": "2026-05-06T10:00:00Z",
+      "updated_at": "2026-05-06T12:00:00Z",
+      "merged_at": "2026-05-06T12:30:00Z",
+      "head_sha": "abc444",
+      "base_ref": "main",
+      "head_ref": "copy",
+      "reviews": [
+        {
+          "id": "review-4",
+          "author": {"login": "reviewer"},
+          "state": "APPROVED",
+          "body": "LGTM, nice work.",
+          "url": "https://github.com/octo/app/pull/4#pullrequestreview-4",
+          "created_at": "2026-05-06T11:00:00Z"
+        }
+      ],
+      "review_comments": [],
+      "issue_comments": [],
+      "files": [
+        {"path": "README.md", "status": "modified", "additions": 2, "deletions": 1, "changes": 3}
+      ],
+      "commits": [],
+      "check_runs": []
+    }
+  ]
+}
