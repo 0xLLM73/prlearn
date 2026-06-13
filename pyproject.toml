@@ -9,7 +9,7 @@ description = "Local-first CLI that turns GitHub PR feedback into personal codin
 readme = "README.md"
 requires-python = ">=3.11"
 authors = [{ name = "prlearn" }]
-dependencies = ["cryptography>=48.0.0"]
+dependencies = ["cryptography>=49.0.0"]
 
 [project.optional-dependencies]
 test = ["pytest>=9.0.3"]
